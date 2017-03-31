@@ -1,6 +1,5 @@
 PODS:
   - Alamofire (4.3.0)
-  - EVGPUImage2 (0.1.0)
   - RxCocoa (3.2.0):
     - RxSwift (~> 3.1)
   - RxDataSources (1.0.2):
@@ -10,18 +9,16 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.3)
-  - EVGPUImage2 (~> 0.1)
   - RxCocoa (~> 3.1)
   - RxDataSources (~> 1.0)
   - RxSwift (~> 3.1)
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
-  EVGPUImage2: 29221cf64d70ab9119dd48fc8898677b2af0c16e
   RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
   RxDataSources: 1de77880bf5b7fcee42102adcd5a5d65e5b81541
   RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
 
-PODFILE CHECKSUM: 508c16b59c6fce7bee296c76c327428e6ffdc50b
+PODFILE CHECKSUM: cbf32194c222dcfd2d39f2334fd5f1d45c6d8e43
 
 COCOAPODS: 1.2.0

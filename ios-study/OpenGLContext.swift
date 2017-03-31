@@ -12,9 +12,18 @@ import UIKit
 var imageProcessingShareGroup:EAGLSharegroup? = nil
 
 public class OpenGLContext : SerialDispatch {
+    lazy var framebufferCache: FramebufferCache = {
+        return FramebufferCache(context: self)
+    }()
     var shaderCache: [String:ShaderProgram] = [:]
     
     let context: EAGLContext
+    
+    lazy var coreVideoTextureCache: CVOpenGLESTextureCache = {
+        var newTextureCache: CVOpenGLESTextureCache? = nil
+        let err = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault, nil, self.context, nil, &newTextureCache)
+        return newTextureCache!
+    }()
     
     public let serialDispatchQueue: DispatchQueue = DispatchQueue(label:"com.sunsetlakesoftware.GPUImage.processingQueue", attributes: [])
     public let dispatchQueueKey = DispatchSpecificKey<Int>()
@@ -34,9 +43,16 @@ public class OpenGLContext : SerialDispatch {
     }
     
     public func makeCurrentContext() {
-        if (EAGLContext.current() != self.context)
-        {
+        if (EAGLContext.current() != self.context) {
             EAGLContext.setCurrent(self.context)
         }
+    }
+    
+    func supportsTextureCaches() -> Bool {
+        #if (arch(i386) || arch(x86_64)) && os(iOS)
+            return false // Simulator glitches out on use of texture caches
+        #else
+            return true // Every iOS version and device that can run Swift can handle texture caches
+        #endif
     }
 }

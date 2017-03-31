@@ -12,3 +12,18 @@ public protocol AudioEncodingTarget {
     func activateAudioTrack()
     func processAudioBuffer(_ sampleBuffer:CMSampleBuffer)
 }
+
+public extension Timestamp {
+    public init(_ time:CMTime) {
+        self.value = time.value
+        self.timescale = time.timescale
+        self.flags = TimestampFlags(rawValue: time.flags.rawValue)
+        self.epoch = time.epoch
+    }
+    
+    public var asCMTime:CMTime {
+        get {
+            return CMTimeMakeWithEpoch(value, timescale, epoch)
+        }
+    }
+}

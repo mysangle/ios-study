@@ -19,9 +19,15 @@ enum ShaderType {
 }
 
 public class ShaderProgram {
+    public var colorUniformsUseFourComponents = false
     let program:GLuint
     var vertexShader:GLuint! // At some point, the Swift compiler will be able to deal with the early throw and we can convert these to lets
     var fragmentShader:GLuint!
+    private var attributeAddresses = [String:GLuint]()
+    private var uniformAddresses = [String:GLint]()
+    private var currentUniformIntValues = [String:GLint]()
+    private var currentUniformFloatValues = [String:GLfloat]()
+    private var currentUniformFloatArrayValues = [String:[GLfloat]]()
     
     public init(vertexShader:String, fragmentShader:String) throws {
         program = glCreateProgram()
@@ -55,6 +61,111 @@ public class ShaderProgram {
         glDeleteProgram(program)
     }
     
+    public func attributeIndex(_ attribute:String) -> GLuint? {
+        if let attributeAddress = attributeAddresses[attribute] {
+            return attributeAddress
+        } else {
+            var attributeAddress:GLint = -1
+            attribute.withGLChar{glString in
+                attributeAddress = glGetAttribLocation(self.program, glString)
+            }
+            
+            if (attributeAddress < 0) {
+                return nil
+            } else {
+                glEnableVertexAttribArray(GLuint(attributeAddress))
+                attributeAddresses[attribute] = GLuint(attributeAddress)
+                return GLuint(attributeAddress)
+            }
+        }
+    }
+    
+    public func uniformIndex(_ uniform:String) -> GLint? {
+        if let uniformAddress = uniformAddresses[uniform] {
+            return uniformAddress
+        } else {
+            var uniformAddress:GLint = -1
+            uniform.withGLChar{glString in
+                uniformAddress = glGetUniformLocation(self.program, glString)
+            }
+            
+            if (uniformAddress < 0) {
+                return nil
+            } else {
+                uniformAddresses[uniform] = uniformAddress
+                return uniformAddress
+            }
+        }
+    }
+    
+    public func setValue(_ value:GLfloat, forUniform:String) {
+        guard let uniformAddress = uniformIndex(forUniform) else {
+            debugPrint("Warning: Tried to set a uniform (\(forUniform)) that was missing or optimized out by the compiler")
+            return
+        }
+        if (currentUniformFloatValues[forUniform] != value) {
+            glUniform1f(GLint(uniformAddress), value)
+            currentUniformFloatValues[forUniform] = value
+        }
+    }
+    
+    public func setValue(_ value:GLint, forUniform:String) {
+        guard let uniformAddress = uniformIndex(forUniform) else {
+            debugPrint("Warning: Tried to set a uniform (\(forUniform)) that was missing or optimized out by the compiler")
+            return
+        }
+        if (currentUniformIntValues[forUniform] != value) {
+            glUniform1i(GLint(uniformAddress), value)
+            currentUniformIntValues[forUniform] = value
+        }
+    }
+    
+    public func setValue(_ value:Color, forUniform:String) {
+        if colorUniformsUseFourComponents {
+            self.setValue(value.toGLArrayWithAlpha(), forUniform:forUniform)
+        } else {
+            self.setValue(value.toGLArray(), forUniform:forUniform)
+        }
+    }
+    
+    public func setValue(_ value:[GLfloat], forUniform:String) {
+        guard let uniformAddress = uniformIndex(forUniform) else {
+            debugPrint("Warning: Tried to set a uniform (\(forUniform)) that was missing or optimized out by the compiler")
+            return
+        }
+        if let previousValue = currentUniformFloatArrayValues[forUniform], previousValue == value{
+        } else {
+            if (value.count == 2) {
+                glUniform2fv(uniformAddress, 1, value)
+            } else if (value.count == 3) {
+                glUniform3fv(uniformAddress, 1, value)
+            } else if (value.count == 4) {
+                glUniform4fv(uniformAddress, 1, value)
+            } else {
+                fatalError("Tried to set a float array uniform outside of the range of values")
+            }
+            currentUniformFloatArrayValues[forUniform] = value
+        }
+    }
+    
+    public func setMatrix(_ value:[GLfloat], forUniform:String) {
+        guard let uniformAddress = uniformIndex(forUniform) else {
+            debugPrint("Warning: Tried to set a uniform (\(forUniform)) that was missing or optimized out by the compiler")
+            return
+        }
+        if let previousValue = currentUniformFloatArrayValues[forUniform], previousValue == value{
+        } else {
+            if (value.count == 9) {
+                glUniformMatrix3fv(uniformAddress, 1, GLboolean(GL_FALSE), value)
+            } else if (value.count == 16) {
+                glUniformMatrix4fv(uniformAddress, 1, GLboolean(GL_FALSE), value)
+            } else {
+                fatalError("Tried to set a matrix uniform outside of the range of supported sizes (3x3, 4x4)")
+            }
+            currentUniformFloatArrayValues[forUniform] = value
+        }
+    }
+    
     func link() throws {
         glLinkProgram(program)
         
@@ -72,6 +183,10 @@ public class ShaderProgram {
             
             throw ShaderCompileError(compileLog:"Link error")
         }
+    }
+    
+    public func use() {
+        glUseProgram(program)
     }
 }
 
