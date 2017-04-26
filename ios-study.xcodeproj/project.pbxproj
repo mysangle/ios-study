@@ -12,6 +12,15 @@
 		8713A3831E6E8A9100646A6C /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8713A3821E6E8A9100646A6C /* Camera.swift */; };
 		8713A3871E6E937C00646A6C /* ImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8713A3861E6E937C00646A6C /* ImageOrientation.swift */; };
 		8713A3891E6EA70D00646A6C /* ShaderProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8713A3881E6EA70D00646A6C /* ShaderProgram.swift */; };
+		871DF5F81EB046320044D6A4 /* CurrentThreadScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871DF5F71EB046320044D6A4 /* CurrentThreadScheduler.swift */; };
+		871DF5FA1EB08B0E0044D6A4 /* Platform.Darwin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871DF5F91EB08B0E0044D6A4 /* Platform.Darwin.swift */; };
+		871DF5FC1EB08C1F0044D6A4 /* ImmediateSchedulerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871DF5FB1EB08C1F0044D6A4 /* ImmediateSchedulerType.swift */; };
+		871DF5FE1EB08C7B0044D6A4 /* RxMutableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871DF5FD1EB08C7B0044D6A4 /* RxMutableBox.swift */; };
+		871DF6001EB08D870044D6A4 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871DF5FF1EB08D870044D6A4 /* Queue.swift */; };
+		871DF6021EB08DEB0044D6A4 /* ScheduledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871DF6011EB08DEB0044D6A4 /* ScheduledItem.swift */; };
+		871DF6041EB08E100044D6A4 /* ScheduledItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871DF6031EB08E100044D6A4 /* ScheduledItemType.swift */; };
+		871DF6061EB091310044D6A4 /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871DF6051EB091310044D6A4 /* Cancelable.swift */; };
+		871DF6081EB0915B0044D6A4 /* InvocableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871DF6071EB0915B0044D6A4 /* InvocableType.swift */; };
 		873BB8E11E83B5BD00E1547E /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BB8E01E83B5BD00E1547E /* Size.swift */; };
 		873BB8E31E83B89E00E1547E /* FramebufferCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BB8E21E83B89E00E1547E /* FramebufferCache.swift */; };
 		873BB8E51E83C38300E1547E /* Timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BB8E41E83C38300E1547E /* Timestamp.swift */; };
@@ -20,6 +29,17 @@
 		873BB8EB1E83C92500E1547E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BB8EA1E83C92500E1547E /* Color.swift */; };
 		873BB8ED1E83C98800E1547E /* ShaderUniformSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BB8EC1E83C98800E1547E /* ShaderUniformSettings.swift */; };
 		873BB8EF1E83C9C700E1547E /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BB8EE1E83C9C700E1547E /* Position.swift */; };
+		876ABF2C1EA71702000E0856 /* Observable+Creation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF2B1EA71702000E0856 /* Observable+Creation.swift */; };
+		876ABF2E1EA71749000E0856 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF2D1EA71749000E0856 /* Observable.swift */; };
+		876ABF321EA73A54000E0856 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF311EA73A54000E0856 /* Event.swift */; };
+		876ABF341EA73AA0000E0856 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF331EA73AA0000E0856 /* ObservableType.swift */; };
+		876ABF361EA73DF3000E0856 /* ObservableConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF351EA73DF3000E0856 /* ObservableConvertibleType.swift */; };
+		876ABF381EA73EC2000E0856 /* ObserverType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF371EA73EC2000E0856 /* ObserverType.swift */; };
+		876ABF3A1EA73F26000E0856 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF391EA73F26000E0856 /* Disposable.swift */; };
+		876ABF3C1EA74396000E0856 /* Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF3B1EA74396000E0856 /* Rx.swift */; };
+		876ABF3E1EA7766E000E0856 /* AnonymousObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF3D1EA7766E000E0856 /* AnonymousObservable.swift */; };
+		876ABF401EA7769A000E0856 /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF3F1EA7769A000E0856 /* Producer.swift */; };
+		876ABF421EA7770C000E0856 /* AnyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF411EA7770C000E0856 /* AnyObserver.swift */; };
 		87CDE1EF1E6CFE750030D1AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDE1EE1E6CFE750030D1AC /* AppDelegate.swift */; };
 		87CDE1F11E6CFE750030D1AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDE1F01E6CFE750030D1AC /* ViewController.swift */; };
 		87CDE1F41E6CFE750030D1AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CDE1F21E6CFE750030D1AC /* Main.storyboard */; };
@@ -43,6 +63,15 @@
 		8713A3821E6E8A9100646A6C /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		8713A3861E6E937C00646A6C /* ImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOrientation.swift; sourceTree = "<group>"; };
 		8713A3881E6EA70D00646A6C /* ShaderProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShaderProgram.swift; sourceTree = "<group>"; };
+		871DF5F71EB046320044D6A4 /* CurrentThreadScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentThreadScheduler.swift; path = RxSwift/CurrentThreadScheduler.swift; sourceTree = "<group>"; };
+		871DF5F91EB08B0E0044D6A4 /* Platform.Darwin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Platform.Darwin.swift; path = RxSwift/Platform.Darwin.swift; sourceTree = "<group>"; };
+		871DF5FB1EB08C1F0044D6A4 /* ImmediateSchedulerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImmediateSchedulerType.swift; path = RxSwift/ImmediateSchedulerType.swift; sourceTree = "<group>"; };
+		871DF5FD1EB08C7B0044D6A4 /* RxMutableBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxMutableBox.swift; path = RxSwift/RxMutableBox.swift; sourceTree = "<group>"; };
+		871DF5FF1EB08D870044D6A4 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = RxSwift/Queue.swift; sourceTree = "<group>"; };
+		871DF6011EB08DEB0044D6A4 /* ScheduledItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduledItem.swift; path = RxSwift/ScheduledItem.swift; sourceTree = "<group>"; };
+		871DF6031EB08E100044D6A4 /* ScheduledItemType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduledItemType.swift; path = RxSwift/ScheduledItemType.swift; sourceTree = "<group>"; };
+		871DF6051EB091310044D6A4 /* Cancelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cancelable.swift; path = RxSwift/Cancelable.swift; sourceTree = "<group>"; };
+		871DF6071EB0915B0044D6A4 /* InvocableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvocableType.swift; path = RxSwift/InvocableType.swift; sourceTree = "<group>"; };
 		873BB8E01E83B5BD00E1547E /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		873BB8E21E83B89E00E1547E /* FramebufferCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FramebufferCache.swift; sourceTree = "<group>"; };
 		873BB8E41E83C38300E1547E /* Timestamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
@@ -51,6 +80,17 @@
 		873BB8EA1E83C92500E1547E /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		873BB8EC1E83C98800E1547E /* ShaderUniformSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShaderUniformSettings.swift; sourceTree = "<group>"; };
 		873BB8EE1E83C9C700E1547E /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		876ABF2B1EA71702000E0856 /* Observable+Creation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Observable+Creation.swift"; path = "RxSwift/Observable+Creation.swift"; sourceTree = "<group>"; };
+		876ABF2D1EA71749000E0856 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = RxSwift/Observable.swift; sourceTree = "<group>"; };
+		876ABF311EA73A54000E0856 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = RxSwift/Event.swift; sourceTree = "<group>"; };
+		876ABF331EA73AA0000E0856 /* ObservableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservableType.swift; path = RxSwift/ObservableType.swift; sourceTree = "<group>"; };
+		876ABF351EA73DF3000E0856 /* ObservableConvertibleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservableConvertibleType.swift; path = RxSwift/ObservableConvertibleType.swift; sourceTree = "<group>"; };
+		876ABF371EA73EC2000E0856 /* ObserverType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObserverType.swift; path = RxSwift/ObserverType.swift; sourceTree = "<group>"; };
+		876ABF391EA73F26000E0856 /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Disposable.swift; path = RxSwift/Disposable.swift; sourceTree = "<group>"; };
+		876ABF3B1EA74396000E0856 /* Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rx.swift; path = RxSwift/Rx.swift; sourceTree = "<group>"; };
+		876ABF3D1EA7766E000E0856 /* AnonymousObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnonymousObservable.swift; path = RxSwift/AnonymousObservable.swift; sourceTree = "<group>"; };
+		876ABF3F1EA7769A000E0856 /* Producer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Producer.swift; path = RxSwift/Producer.swift; sourceTree = "<group>"; };
+		876ABF411EA7770C000E0856 /* AnyObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnyObserver.swift; path = RxSwift/AnyObserver.swift; sourceTree = "<group>"; };
 		87CDE1EB1E6CFE750030D1AC /* ios-study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87CDE1EE1E6CFE750030D1AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87CDE1F01E6CFE750030D1AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +161,33 @@
 			name = GPUImage;
 			sourceTree = "<group>";
 		};
+		876ABF291EA60F8A000E0856 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				876ABF3D1EA7766E000E0856 /* AnonymousObservable.swift */,
+				876ABF411EA7770C000E0856 /* AnyObserver.swift */,
+				871DF6051EB091310044D6A4 /* Cancelable.swift */,
+				871DF5F71EB046320044D6A4 /* CurrentThreadScheduler.swift */,
+				876ABF391EA73F26000E0856 /* Disposable.swift */,
+				876ABF311EA73A54000E0856 /* Event.swift */,
+				871DF5FB1EB08C1F0044D6A4 /* ImmediateSchedulerType.swift */,
+				871DF6071EB0915B0044D6A4 /* InvocableType.swift */,
+				876ABF2D1EA71749000E0856 /* Observable.swift */,
+				876ABF2B1EA71702000E0856 /* Observable+Creation.swift */,
+				876ABF351EA73DF3000E0856 /* ObservableConvertibleType.swift */,
+				876ABF331EA73AA0000E0856 /* ObservableType.swift */,
+				876ABF371EA73EC2000E0856 /* ObserverType.swift */,
+				871DF5F91EB08B0E0044D6A4 /* Platform.Darwin.swift */,
+				876ABF3F1EA7769A000E0856 /* Producer.swift */,
+				871DF5FF1EB08D870044D6A4 /* Queue.swift */,
+				876ABF3B1EA74396000E0856 /* Rx.swift */,
+				871DF5FD1EB08C7B0044D6A4 /* RxMutableBox.swift */,
+				871DF6011EB08DEB0044D6A4 /* ScheduledItem.swift */,
+				871DF6031EB08E100044D6A4 /* ScheduledItemType.swift */,
+			);
+			name = RxSwift;
+			sourceTree = "<group>";
+		};
 		87CDE1E21E6CFE750030D1AC = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +209,7 @@
 		87CDE1ED1E6CFE750030D1AC /* ios-study */ = {
 			isa = PBXGroup;
 			children = (
+				876ABF291EA60F8A000E0856 /* RxSwift */,
 				8713A3811E6E819F00646A6C /* GPUImage */,
 				87CDE1EE1E6CFE750030D1AC /* AppDelegate.swift */,
 				87CDE1F01E6CFE750030D1AC /* ViewController.swift */,
@@ -286,7 +354,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876ABF2E1EA71749000E0856 /* Observable.swift in Sources */,
+				876ABF3A1EA73F26000E0856 /* Disposable.swift in Sources */,
 				873BB8E11E83B5BD00E1547E /* Size.swift in Sources */,
+				871DF6021EB08DEB0044D6A4 /* ScheduledItem.swift in Sources */,
 				87CE762B1E713C9400E29E22 /* ConvertedShaders_GL.swift in Sources */,
 				873BB8EB1E83C92500E1547E /* Color.swift in Sources */,
 				873BB8E31E83B89E00E1547E /* FramebufferCache.swift in Sources */,
@@ -296,18 +367,35 @@
 				87CE762D1E713E4200E29E22 /* SerialDispatch.swift in Sources */,
 				873BB8EF1E83C9C700E1547E /* Position.swift in Sources */,
 				873BB8E51E83C38300E1547E /* Timestamp.swift in Sources */,
+				876ABF321EA73A54000E0856 /* Event.swift in Sources */,
+				871DF5FC1EB08C1F0044D6A4 /* ImmediateSchedulerType.swift in Sources */,
+				871DF5F81EB046320044D6A4 /* CurrentThreadScheduler.swift in Sources */,
+				871DF6061EB091310044D6A4 /* Cancelable.swift in Sources */,
+				876ABF3C1EA74396000E0856 /* Rx.swift in Sources */,
+				876ABF3E1EA7766E000E0856 /* AnonymousObservable.swift in Sources */,
 				87CE76331E793CC800E29E22 /* Framebuffer.swift in Sources */,
+				871DF5FA1EB08B0E0044D6A4 /* Platform.Darwin.swift in Sources */,
 				8713A3891E6EA70D00646A6C /* ShaderProgram.swift in Sources */,
 				87CDE1F11E6CFE750030D1AC /* ViewController.swift in Sources */,
 				87CDE1EF1E6CFE750030D1AC /* AppDelegate.swift in Sources */,
 				87CE76251E713A4900E29E22 /* OpenGLContext_Shared.swift in Sources */,
 				8700A45D1E8E251F006C364A /* Pipeline.swift in Sources */,
 				87CE76271E713A6F00E29E22 /* OpenGLContext.swift in Sources */,
+				871DF6041EB08E100044D6A4 /* ScheduledItemType.swift in Sources */,
+				876ABF361EA73DF3000E0856 /* ObservableConvertibleType.swift in Sources */,
 				8713A3871E6E937C00646A6C /* ImageOrientation.swift in Sources */,
+				876ABF381EA73EC2000E0856 /* ObserverType.swift in Sources */,
+				876ABF401EA7769A000E0856 /* Producer.swift in Sources */,
 				873BB8ED1E83C98800E1547E /* ShaderUniformSettings.swift in Sources */,
+				871DF5FE1EB08C7B0044D6A4 /* RxMutableBox.swift in Sources */,
+				876ABF2C1EA71702000E0856 /* Observable+Creation.swift in Sources */,
+				876ABF341EA73AA0000E0856 /* ObservableType.swift in Sources */,
 				873BB8E71E83C5F500E1547E /* Matrix.swift in Sources */,
 				87CE76291E713C6500E29E22 /* BasicOperation.swift in Sources */,
+				871DF6001EB08D870044D6A4 /* Queue.swift in Sources */,
+				871DF6081EB0915B0044D6A4 /* InvocableType.swift in Sources */,
 				8713A3801E6E819600646A6C /* RenderView.swift in Sources */,
+				876ABF421EA7770C000E0856 /* AnyObserver.swift in Sources */,
 				87CE762F1E71421100E29E22 /* OpenGLRendering.swift in Sources */,
 				87CE76311E79336000E29E22 /* MovieOutput.swift in Sources */,
 			);
