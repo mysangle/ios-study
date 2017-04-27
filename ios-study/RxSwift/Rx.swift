@@ -6,6 +6,32 @@
 //  Copyright © 2017 twentyhours. All rights reserved.
 //
 
+#if TRACE_RESOURCES
+    fileprivate var resourceCount: AtomicInt = 0
+    
+    /// Resource utilization information
+    public struct Resources {
+        /// Counts internal Rx resource allocations (Observables, Observers, Disposables, etc.). This provides a simple way to detect leaks during development.
+        public static var total: Int32 {
+            return resourceCount.valueSnapshot()
+        }
+        
+        /// Increments `Resources.total` resource count.
+        ///
+        /// - returns: New resource count
+        public static func incrementTotal() -> Int32 {
+            return AtomicIncrement(&resourceCount)
+        }
+        
+        /// Decrements `Resources.total` resource count
+        ///
+        /// - returns: New resource count
+        public static func decrementTotal() -> Int32 {
+            return AtomicDecrement(&resourceCount)
+        }
+    }
+#endif
+
 /// Swift는 abstract method를 지원하지 않는다.
 /// 아래의 함수를 통해 서브클래스에서 구현해야 하는 함수의 런타임 체크를 한다.
 /// 에러 메시지에 파일이름과 라인넘버를 표시한다.

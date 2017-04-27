@@ -7,6 +7,7 @@
 //
 
 /// 내부에 action을 들고 있다가 invoke시 action을 실행한다.
+/// dispose()가 호출되면 action의 리턴인 disposable의 dispose()가 호출되게 된다.
 struct ScheduledItem<T> : ScheduledItemType {
     typealias Action = (T) -> Disposable
     

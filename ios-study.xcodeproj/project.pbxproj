@@ -40,6 +40,16 @@
 		876ABF3E1EA7766E000E0856 /* AnonymousObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF3D1EA7766E000E0856 /* AnonymousObservable.swift */; };
 		876ABF401EA7769A000E0856 /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF3F1EA7769A000E0856 /* Producer.swift */; };
 		876ABF421EA7770C000E0856 /* AnyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876ABF411EA7770C000E0856 /* AnyObserver.swift */; };
+		87BD1A4C1EB18DD5001FB3B3 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A4B1EB18DD5001FB3B3 /* Sink.swift */; };
+		87BD1A4E1EB19B51001FB3B3 /* ObservableType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A4D1EB19B51001FB3B3 /* ObservableType+Extensions.swift */; };
+		87BD1A501EB19DF4001FB3B3 /* Disposables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A4F1EB19DF4001FB3B3 /* Disposables.swift */; };
+		87BD1A521EB19E2B001FB3B3 /* AnonymousDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A511EB19E2B001FB3B3 /* AnonymousDisposable.swift */; };
+		87BD1A541EB19E79001FB3B3 /* AnonymousObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A531EB19E79001FB3B3 /* AnonymousObserver.swift */; };
+		87BD1A561EB1A28B001FB3B3 /* ObserverBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A551EB1A28B001FB3B3 /* ObserverBase.swift */; };
+		87BD1A581EB1A3B8001FB3B3 /* NopDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A571EB1A3B8001FB3B3 /* NopDisposable.swift */; };
+		87BD1A5A1EB1B5DE001FB3B3 /* DisposeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A591EB1B5DE001FB3B3 /* DisposeBase.swift */; };
+		87BD1A5C1EB1B652001FB3B3 /* BinaryDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A5B1EB1B652001FB3B3 /* BinaryDisposable.swift */; };
+		87BD1A5E1EB1BE35001FB3B3 /* SingleAssignmentDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A5D1EB1BE35001FB3B3 /* SingleAssignmentDisposable.swift */; };
 		87CDE1EF1E6CFE750030D1AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDE1EE1E6CFE750030D1AC /* AppDelegate.swift */; };
 		87CDE1F11E6CFE750030D1AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDE1F01E6CFE750030D1AC /* ViewController.swift */; };
 		87CDE1F41E6CFE750030D1AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CDE1F21E6CFE750030D1AC /* Main.storyboard */; };
@@ -91,6 +101,16 @@
 		876ABF3D1EA7766E000E0856 /* AnonymousObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnonymousObservable.swift; path = RxSwift/AnonymousObservable.swift; sourceTree = "<group>"; };
 		876ABF3F1EA7769A000E0856 /* Producer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Producer.swift; path = RxSwift/Producer.swift; sourceTree = "<group>"; };
 		876ABF411EA7770C000E0856 /* AnyObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnyObserver.swift; path = RxSwift/AnyObserver.swift; sourceTree = "<group>"; };
+		87BD1A4B1EB18DD5001FB3B3 /* Sink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sink.swift; path = RxSwift/Sink.swift; sourceTree = "<group>"; };
+		87BD1A4D1EB19B51001FB3B3 /* ObservableType+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ObservableType+Extensions.swift"; path = "RxSwift/ObservableType+Extensions.swift"; sourceTree = "<group>"; };
+		87BD1A4F1EB19DF4001FB3B3 /* Disposables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Disposables.swift; path = RxSwift/Disposables.swift; sourceTree = "<group>"; };
+		87BD1A511EB19E2B001FB3B3 /* AnonymousDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnonymousDisposable.swift; path = RxSwift/AnonymousDisposable.swift; sourceTree = "<group>"; };
+		87BD1A531EB19E79001FB3B3 /* AnonymousObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnonymousObserver.swift; path = RxSwift/AnonymousObserver.swift; sourceTree = "<group>"; };
+		87BD1A551EB1A28B001FB3B3 /* ObserverBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObserverBase.swift; path = RxSwift/ObserverBase.swift; sourceTree = "<group>"; };
+		87BD1A571EB1A3B8001FB3B3 /* NopDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NopDisposable.swift; path = RxSwift/NopDisposable.swift; sourceTree = "<group>"; };
+		87BD1A591EB1B5DE001FB3B3 /* DisposeBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisposeBase.swift; path = RxSwift/DisposeBase.swift; sourceTree = "<group>"; };
+		87BD1A5B1EB1B652001FB3B3 /* BinaryDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BinaryDisposable.swift; path = RxSwift/BinaryDisposable.swift; sourceTree = "<group>"; };
+		87BD1A5D1EB1BE35001FB3B3 /* SingleAssignmentDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleAssignmentDisposable.swift; path = RxSwift/SingleAssignmentDisposable.swift; sourceTree = "<group>"; };
 		87CDE1EB1E6CFE750030D1AC /* ios-study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87CDE1EE1E6CFE750030D1AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87CDE1F01E6CFE750030D1AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,18 +184,26 @@
 		876ABF291EA60F8A000E0856 /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				87BD1A511EB19E2B001FB3B3 /* AnonymousDisposable.swift */,
 				876ABF3D1EA7766E000E0856 /* AnonymousObservable.swift */,
+				87BD1A531EB19E79001FB3B3 /* AnonymousObserver.swift */,
 				876ABF411EA7770C000E0856 /* AnyObserver.swift */,
+				87BD1A5B1EB1B652001FB3B3 /* BinaryDisposable.swift */,
 				871DF6051EB091310044D6A4 /* Cancelable.swift */,
 				871DF5F71EB046320044D6A4 /* CurrentThreadScheduler.swift */,
 				876ABF391EA73F26000E0856 /* Disposable.swift */,
+				87BD1A4F1EB19DF4001FB3B3 /* Disposables.swift */,
+				87BD1A591EB1B5DE001FB3B3 /* DisposeBase.swift */,
 				876ABF311EA73A54000E0856 /* Event.swift */,
 				871DF5FB1EB08C1F0044D6A4 /* ImmediateSchedulerType.swift */,
 				871DF6071EB0915B0044D6A4 /* InvocableType.swift */,
+				87BD1A571EB1A3B8001FB3B3 /* NopDisposable.swift */,
 				876ABF2D1EA71749000E0856 /* Observable.swift */,
 				876ABF2B1EA71702000E0856 /* Observable+Creation.swift */,
 				876ABF351EA73DF3000E0856 /* ObservableConvertibleType.swift */,
 				876ABF331EA73AA0000E0856 /* ObservableType.swift */,
+				87BD1A4D1EB19B51001FB3B3 /* ObservableType+Extensions.swift */,
+				87BD1A551EB1A28B001FB3B3 /* ObserverBase.swift */,
 				876ABF371EA73EC2000E0856 /* ObserverType.swift */,
 				871DF5F91EB08B0E0044D6A4 /* Platform.Darwin.swift */,
 				876ABF3F1EA7769A000E0856 /* Producer.swift */,
@@ -184,6 +212,8 @@
 				871DF5FD1EB08C7B0044D6A4 /* RxMutableBox.swift */,
 				871DF6011EB08DEB0044D6A4 /* ScheduledItem.swift */,
 				871DF6031EB08E100044D6A4 /* ScheduledItemType.swift */,
+				87BD1A5D1EB1BE35001FB3B3 /* SingleAssignmentDisposable.swift */,
+				87BD1A4B1EB18DD5001FB3B3 /* Sink.swift */,
 			);
 			name = RxSwift;
 			sourceTree = "<group>";
@@ -354,13 +384,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87BD1A501EB19DF4001FB3B3 /* Disposables.swift in Sources */,
 				876ABF2E1EA71749000E0856 /* Observable.swift in Sources */,
+				87BD1A5A1EB1B5DE001FB3B3 /* DisposeBase.swift in Sources */,
 				876ABF3A1EA73F26000E0856 /* Disposable.swift in Sources */,
+				87BD1A4C1EB18DD5001FB3B3 /* Sink.swift in Sources */,
 				873BB8E11E83B5BD00E1547E /* Size.swift in Sources */,
 				871DF6021EB08DEB0044D6A4 /* ScheduledItem.swift in Sources */,
 				87CE762B1E713C9400E29E22 /* ConvertedShaders_GL.swift in Sources */,
 				873BB8EB1E83C92500E1547E /* Color.swift in Sources */,
 				873BB8E31E83B89E00E1547E /* FramebufferCache.swift in Sources */,
+				87BD1A5C1EB1B652001FB3B3 /* BinaryDisposable.swift in Sources */,
 				8713A3831E6E8A9100646A6C /* Camera.swift in Sources */,
 				873BB8E91E83C64C00E1547E /* CameraConversion.swift in Sources */,
 				87CE76231E713A0B00E29E22 /* ConvertedShaders_GLES.swift in Sources */,
@@ -371,10 +405,14 @@
 				871DF5FC1EB08C1F0044D6A4 /* ImmediateSchedulerType.swift in Sources */,
 				871DF5F81EB046320044D6A4 /* CurrentThreadScheduler.swift in Sources */,
 				871DF6061EB091310044D6A4 /* Cancelable.swift in Sources */,
+				87BD1A581EB1A3B8001FB3B3 /* NopDisposable.swift in Sources */,
+				87BD1A521EB19E2B001FB3B3 /* AnonymousDisposable.swift in Sources */,
 				876ABF3C1EA74396000E0856 /* Rx.swift in Sources */,
 				876ABF3E1EA7766E000E0856 /* AnonymousObservable.swift in Sources */,
 				87CE76331E793CC800E29E22 /* Framebuffer.swift in Sources */,
+				87BD1A5E1EB1BE35001FB3B3 /* SingleAssignmentDisposable.swift in Sources */,
 				871DF5FA1EB08B0E0044D6A4 /* Platform.Darwin.swift in Sources */,
+				87BD1A561EB1A28B001FB3B3 /* ObserverBase.swift in Sources */,
 				8713A3891E6EA70D00646A6C /* ShaderProgram.swift in Sources */,
 				87CDE1F11E6CFE750030D1AC /* ViewController.swift in Sources */,
 				87CDE1EF1E6CFE750030D1AC /* AppDelegate.swift in Sources */,
@@ -390,6 +428,7 @@
 				871DF5FE1EB08C7B0044D6A4 /* RxMutableBox.swift in Sources */,
 				876ABF2C1EA71702000E0856 /* Observable+Creation.swift in Sources */,
 				876ABF341EA73AA0000E0856 /* ObservableType.swift in Sources */,
+				87BD1A541EB19E79001FB3B3 /* AnonymousObserver.swift in Sources */,
 				873BB8E71E83C5F500E1547E /* Matrix.swift in Sources */,
 				87CE76291E713C6500E29E22 /* BasicOperation.swift in Sources */,
 				871DF6001EB08D870044D6A4 /* Queue.swift in Sources */,
@@ -397,6 +436,7 @@
 				8713A3801E6E819600646A6C /* RenderView.swift in Sources */,
 				876ABF421EA7770C000E0856 /* AnyObserver.swift in Sources */,
 				87CE762F1E71421100E29E22 /* OpenGLRendering.swift in Sources */,
+				87BD1A4E1EB19B51001FB3B3 /* ObservableType+Extensions.swift in Sources */,
 				87CE76311E79336000E29E22 /* MovieOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,7 +503,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -507,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -554,7 +594,7 @@
 				87CDE1FC1E6CFE750030D1AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		87CDE1FD1E6CFE750030D1AC /* Build configuration list for PBXNativeTarget "ios-study" */ = {
 			isa = XCConfigurationList;
@@ -563,7 +603,7 @@
 				87CDE1FF1E6CFE750030D1AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
