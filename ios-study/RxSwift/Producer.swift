@@ -25,6 +25,7 @@ class Producer<Element> : Observable<Element> {
         }
     }
     
+    /// abstract
     func run<O: ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Element {
         rxAbstractMethod()
     }

@@ -25,6 +25,7 @@ class Sink<O : ObserverType> : Disposable {
         _disposed = false
     }
     
+    /// 발생한 이벤트를 등록된 observer에 전달한다.
     final func forwardOn(_ event: Event<O.E>) {
 #if DEBUG
         if AtomicIncrement(&_numberOfConcurrentCalls) > 1 {
