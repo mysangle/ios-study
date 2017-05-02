@@ -26,6 +26,7 @@ class Producer<Element> : Observable<Element> {
     }
     
     /// abstract
+    /// subscribe시 호출되는 함수
     func run<O: ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Element {
         rxAbstractMethod()
     }

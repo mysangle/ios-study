@@ -23,9 +23,11 @@ fileprivate func castToUInt32Pointer(_ pointer: UnsafeMutablePointer<Int32>) -> 
 let AtomicCompareAndSwap = OSAtomicCompareAndSwap32Barrier
 let AtomicIncrement = OSAtomicIncrement32Barrier
 let AtomicDecrement = OSAtomicDecrement32Barrier
+/// mask를 설정한다.
 func AtomicOr(_ mask: UInt32, _ theValue : UnsafeMutablePointer<Int32>) -> Int32 {
     return OSAtomicOr32OrigBarrier(mask, castToUInt32Pointer(theValue))
 }
+/// mask가 설정되어 있는지 확인한다.
 func AtomicFlagSet(_ mask: UInt32, _ theValue : UnsafeMutablePointer<Int32>) -> Bool {
     // just used to create a barrier
     OSAtomicXor32OrigBarrier(0, castToUInt32Pointer(theValue))
