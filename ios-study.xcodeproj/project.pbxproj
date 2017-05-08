@@ -54,6 +54,8 @@
 		87BD1A841EB83AC9001FB3B3 /* SerialDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A831EB83AC9001FB3B3 /* SerialDisposable.swift */; };
 		87CA299C1EC0127F00F03E7B /* GPUImage2 in Resources */ = {isa = PBXBuildFile; fileRef = 87CA299B1EC0127F00F03E7B /* GPUImage2 */; };
 		87CA299F1EC0559F00F03E7B /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CA299E1EC0559F00F03E7B /* Scan.swift */; };
+		87CA29A11EC0599700F03E7B /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CA29A01EC0599700F03E7B /* Zip.swift */; };
+		87CA29A31EC059A600F03E7B /* Zip+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CA29A21EC059A600F03E7B /* Zip+arity.swift */; };
 		87CDE1EF1E6CFE750030D1AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDE1EE1E6CFE750030D1AC /* AppDelegate.swift */; };
 		87CDE1F11E6CFE750030D1AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDE1F01E6CFE750030D1AC /* ViewController.swift */; };
 		87CDE1F41E6CFE750030D1AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CDE1F21E6CFE750030D1AC /* Main.storyboard */; };
@@ -110,6 +112,8 @@
 		87BD1A831EB83AC9001FB3B3 /* SerialDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SerialDisposable.swift; path = RxSwift/SerialDisposable.swift; sourceTree = "<group>"; };
 		87CA299B1EC0127F00F03E7B /* GPUImage2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GPUImage2; sourceTree = "<group>"; };
 		87CA299E1EC0559F00F03E7B /* Scan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Scan.swift; path = RxSwift/Scan.swift; sourceTree = "<group>"; };
+		87CA29A01EC0599700F03E7B /* Zip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = RxSwift/Zip.swift; sourceTree = "<group>"; };
+		87CA29A21EC059A600F03E7B /* Zip+arity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Zip+arity.swift"; path = "RxSwift/Zip+arity.swift"; sourceTree = "<group>"; };
 		87CDE1EB1E6CFE750030D1AC /* ios-study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87CDE1EE1E6CFE750030D1AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87CDE1F01E6CFE750030D1AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 				87BD1A811EB83888001FB3B3 /* RecursiveScheduler.swift */,
 				87BD1A831EB83AC9001FB3B3 /* SerialDisposable.swift */,
 				87CA299E1EC0559F00F03E7B /* Scan.swift */,
+				87CA29A01EC0599700F03E7B /* Zip.swift */,
+				87CA29A21EC059A600F03E7B /* Zip+arity.swift */,
 			);
 			name = RxSwift;
 			sourceTree = "<group>";
@@ -367,12 +373,14 @@
 				876ABF2E1EA71749000E0856 /* Observable.swift in Sources */,
 				87BD1A5A1EB1B5DE001FB3B3 /* DisposeBase.swift in Sources */,
 				876ABF3A1EA73F26000E0856 /* Disposable.swift in Sources */,
+				87CA29A31EC059A600F03E7B /* Zip+arity.swift in Sources */,
 				87BD1A7E1EB8234B001FB3B3 /* SchedulerType.swift in Sources */,
 				87BD1A4C1EB18DD5001FB3B3 /* Sink.swift in Sources */,
 				87BD1A841EB83AC9001FB3B3 /* SerialDisposable.swift in Sources */,
 				87BD1A801EB824AD001FB3B3 /* DispatchQueueConfiguration.swift in Sources */,
 				871DF6021EB08DEB0044D6A4 /* ScheduledItem.swift in Sources */,
 				87BD1A6D1EB312EC001FB3B3 /* RecursiveLock.swift in Sources */,
+				87CA29A11EC0599700F03E7B /* Zip.swift in Sources */,
 				87BD1A5C1EB1B652001FB3B3 /* BinaryDisposable.swift in Sources */,
 				87BD1A751EB3196B001FB3B3 /* Bag.swift in Sources */,
 				87BD1A691EB30EEA001FB3B3 /* SynchronizedOnType.swift in Sources */,
