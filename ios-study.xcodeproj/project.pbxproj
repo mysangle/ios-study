@@ -53,6 +53,7 @@
 		87BD1A821EB83888001FB3B3 /* RecursiveScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A811EB83888001FB3B3 /* RecursiveScheduler.swift */; };
 		87BD1A841EB83AC9001FB3B3 /* SerialDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD1A831EB83AC9001FB3B3 /* SerialDisposable.swift */; };
 		87CA299C1EC0127F00F03E7B /* GPUImage2 in Resources */ = {isa = PBXBuildFile; fileRef = 87CA299B1EC0127F00F03E7B /* GPUImage2 */; };
+		87CA299F1EC0559F00F03E7B /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CA299E1EC0559F00F03E7B /* Scan.swift */; };
 		87CDE1EF1E6CFE750030D1AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDE1EE1E6CFE750030D1AC /* AppDelegate.swift */; };
 		87CDE1F11E6CFE750030D1AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDE1F01E6CFE750030D1AC /* ViewController.swift */; };
 		87CDE1F41E6CFE750030D1AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CDE1F21E6CFE750030D1AC /* Main.storyboard */; };
@@ -108,6 +109,7 @@
 		87BD1A811EB83888001FB3B3 /* RecursiveScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecursiveScheduler.swift; path = RxSwift/RecursiveScheduler.swift; sourceTree = "<group>"; };
 		87BD1A831EB83AC9001FB3B3 /* SerialDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SerialDisposable.swift; path = RxSwift/SerialDisposable.swift; sourceTree = "<group>"; };
 		87CA299B1EC0127F00F03E7B /* GPUImage2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GPUImage2; sourceTree = "<group>"; };
+		87CA299E1EC0559F00F03E7B /* Scan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Scan.swift; path = RxSwift/Scan.swift; sourceTree = "<group>"; };
 		87CDE1EB1E6CFE750030D1AC /* ios-study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87CDE1EE1E6CFE750030D1AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87CDE1F01E6CFE750030D1AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				87BD1A7F1EB824AD001FB3B3 /* DispatchQueueConfiguration.swift */,
 				87BD1A811EB83888001FB3B3 /* RecursiveScheduler.swift */,
 				87BD1A831EB83AC9001FB3B3 /* SerialDisposable.swift */,
+				87CA299E1EC0559F00F03E7B /* Scan.swift */,
 			);
 			name = RxSwift;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				87BD1A671EB2FBA3001FB3B3 /* CombineLatest.swift in Sources */,
 				876ABF3E1EA7766E000E0856 /* AnonymousObservable.swift in Sources */,
 				87BD1A5E1EB1BE35001FB3B3 /* SingleAssignmentDisposable.swift in Sources */,
+				87CA299F1EC0559F00F03E7B /* Scan.swift in Sources */,
 				871DF5FA1EB08B0E0044D6A4 /* Platform.Darwin.swift in Sources */,
 				87BD1A561EB1A28B001FB3B3 /* ObserverBase.swift in Sources */,
 				87CDE1F11E6CFE750030D1AC /* ViewController.swift in Sources */,
