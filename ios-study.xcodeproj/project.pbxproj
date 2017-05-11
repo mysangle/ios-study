@@ -68,6 +68,9 @@
 		87E9A6211EC40BA600A86B83 /* SynchronizedOnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E9A5F11EC40BA600A86B83 /* SynchronizedOnType.swift */; };
 		87E9A6221EC40BA600A86B83 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E9A5F21EC40BA600A86B83 /* Zip.swift */; };
 		87E9A6231EC40BA600A86B83 /* Zip+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E9A5F31EC40BA600A86B83 /* Zip+arity.swift */; };
+		87E9A6251EC4144F00A86B83 /* Observable+MergeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E9A6241EC4144F00A86B83 /* Observable+MergeTest.swift */; };
+		87E9A6271EC414C000A86B83 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E9A6261EC414C000A86B83 /* Sequence.swift */; };
+		87E9A6291EC41AC300A86B83 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E9A6281EC41AC300A86B83 /* Merge.swift */; };
 		E32E35DB11BD1C7724BEB1E7 /* Pods_ios_study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94479CB195CA376FC023625C /* Pods_ios_study.framework */; };
 /* End PBXBuildFile section */
 
@@ -174,6 +177,9 @@
 		87E9A5F11EC40BA600A86B83 /* SynchronizedOnType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedOnType.swift; sourceTree = "<group>"; };
 		87E9A5F21EC40BA600A86B83 /* Zip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zip.swift; sourceTree = "<group>"; };
 		87E9A5F31EC40BA600A86B83 /* Zip+arity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Zip+arity.swift"; sourceTree = "<group>"; };
+		87E9A6241EC4144F00A86B83 /* Observable+MergeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+MergeTest.swift"; sourceTree = "<group>"; };
+		87E9A6261EC414C000A86B83 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		87E9A6281EC41AC300A86B83 /* Merge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		94479CB195CA376FC023625C /* Pods_ios_study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5DF0ED4ABE33573C2C07DC /* Pods-ios-study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-study.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-study/Pods-ios-study.debug.xcconfig"; sourceTree = "<group>"; };
 		DFA139F3B960595CF49FF03B /* Pods-ios-study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-study.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-study/Pods-ios-study.release.xcconfig"; sourceTree = "<group>"; };
@@ -304,6 +310,8 @@
 				87E9A5F21EC40BA600A86B83 /* Zip.swift */,
 				87E9A5F31EC40BA600A86B83 /* Zip+arity.swift */,
 				87E9A5A61EC40AE200A86B83 /* Info.plist */,
+				87E9A6261EC414C000A86B83 /* Sequence.swift */,
+				87E9A6281EC41AC300A86B83 /* Merge.swift */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -315,6 +323,7 @@
 				87E9A5B41EC40AE200A86B83 /* Info.plist */,
 				87E9A5C01EC40B1F00A86B83 /* CurrentThreadSchedulerTest.swift */,
 				87E9A5C21EC40B3300A86B83 /* RxTest.swift */,
+				87E9A6241EC4144F00A86B83 /* Observable+MergeTest.swift */,
 			);
 			path = RxSwiftTests;
 			sourceTree = "<group>";
@@ -580,10 +589,12 @@
 				87E9A6171EC40BA600A86B83 /* Rx.swift in Sources */,
 				87E9A6031EC40BA600A86B83 /* DisposeBase.swift in Sources */,
 				87E9A60D1EC40BA600A86B83 /* ObservableType.swift in Sources */,
+				87E9A6291EC41AC300A86B83 /* Merge.swift in Sources */,
 				87E9A5F61EC40BA600A86B83 /* AnonymousObserver.swift in Sources */,
 				87E9A61D1EC40BA600A86B83 /* SerialDispatchQueueScheduler.swift in Sources */,
 				87E9A60F1EC40BA600A86B83 /* ObserveOn.swift in Sources */,
 				87E9A6181EC40BA600A86B83 /* RxMutableBox.swift in Sources */,
+				87E9A6271EC414C000A86B83 /* Sequence.swift in Sources */,
 				87E9A61B1EC40BA600A86B83 /* ScheduledItemType.swift in Sources */,
 				87E9A6061EC40BA600A86B83 /* InvocableType.swift in Sources */,
 				87E9A61A1EC40BA600A86B83 /* ScheduledItem.swift in Sources */,
@@ -596,6 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87E9A5C11EC40B1F00A86B83 /* CurrentThreadSchedulerTest.swift in Sources */,
+				87E9A6251EC4144F00A86B83 /* Observable+MergeTest.swift in Sources */,
 				87E9A5C31EC40B3300A86B83 /* RxTest.swift in Sources */,
 				87E9A5B31EC40AE200A86B83 /* RxSwiftTests.swift in Sources */,
 			);
@@ -780,7 +792,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RxSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twentyhours.podocpodoc.dev.RxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -806,7 +818,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RxSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twentyhours.podocpodoc.dev.RxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
