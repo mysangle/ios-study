@@ -28,6 +28,9 @@ fileprivate class CurrentThreadSchedulerQueueKey: NSObject, NSCopying {
 
 /// 현재 쓰레드에서 스케줄을 한다.
 /// CurrentThreadScheduler의 스케줄: 큐에 등록되어 있는 action을 바로 실행하는 스케줄
+/// 현재 action이 동작중이면 추가되는 action은 queue에 넣는다.
+/// queue에 넣어진 action은 현재 실행중이던 action이 다 끝나면
+/// queue로부터 꺼내서 동작시킨다.
 ///
 /// pthread를 사용하여 thread local storage를 설정한다.
 public class CurrentThreadScheduler : ImmediateSchedulerType {
@@ -102,6 +105,7 @@ public class CurrentThreadScheduler : ImmediateSchedulerType {
             // 큐에 있는 action을 실행한다.
             while let latest = queue.value.dequeue() {
                 if latest.isDisposed {
+                    // dispose되었으면 실행하지 않는다.
                     continue
                 }
                 latest.invoke()
